@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Import tasks from main.yaml
+      import_tasks: roles/rest_api/tasks/main.yaml

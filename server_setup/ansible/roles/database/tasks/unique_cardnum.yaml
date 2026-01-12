@@ -1,0 +1,20 @@
+---
+- name: Make sure mysql service is running and enabled
+  service:
+    name: mysql
+    state: started
+    enabled: true
+
+- name: Make cardnum unique
+  mysql_query:
+    login_db: "{{ db_name }}"
+    login_user: "{{ db_user }}"
+    login_password: "{{ db_pass }}"
+    query: ALTER TABLE card ADD UNIQUE (cardnum)
+
+- name: Make attempts into int
+  mysql_query:
+    login_db: "{{ db_name }}"
+    login_user: "{{ db_user }}"
+    login_password: "{{ db_pass }}"
+    query: ALTER TABLE card MODIFY COLUMN attempts INT

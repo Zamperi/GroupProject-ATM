@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Import tasks from unique_cardnum.yaml
+      import_tasks: roles/database/tasks/unique_cardnum.yaml

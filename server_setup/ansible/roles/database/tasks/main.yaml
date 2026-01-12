@@ -1,0 +1,37 @@
+---
+- name: Install MySQL
+  become: true
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - mysql-server
+    - mysql-client
+    - python3-pymysql
+
+- name: Start and enable MySQL service
+  service:
+    name: mysql
+    state: started
+    enabled: true
+
+- name: Create database and tables
+  become: true
+  mysql_db:
+    login_unix_socket: /var/run/mysqld/mysqld.sock
+    name: "{{ db_name }}"
+    state: import
+    target: roles/database/files/tables.sql
+    login_user: root
+    login_password: ""
+
+- name: Create MySQL user
+  become: true
+  mysql_user:
+    login_unix_socket: /var/run/mysqld/mysqld.sock
+    login_user: root
+    login_password: ""
+    name: "{{ db_user }}"
+    password: "{{ db_pass }}"
+    priv: "{{ db_name }}.*:ALL"
+    host: '%'

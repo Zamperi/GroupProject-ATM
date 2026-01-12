@@ -1,0 +1,2 @@
+CREATE USER atmuser@'localhost' IDENTIFIED BY 'atmpass';
+GRANT ALL ON bankautomat.* TO atmuser@'localhost';

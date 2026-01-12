@@ -1,0 +1,8 @@
+---
+db_name:  bankautomat
+db_user:  atmuser
+db_pass:  atmpass
+api_path: /home/ubuntu/rest_api/backend
+template_path: /home/ubuntu/ansible/roles/rest_api/templates/atmrestapi.service
+service_name: atmrestapi
+service_user: ubuntu

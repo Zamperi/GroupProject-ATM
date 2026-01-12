@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Import tasks from main.yaml
+      import_tasks: roles/database/tasks/main.yaml

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>withdrawWindow</class>
+ <widget class="QDialog" name="withdrawWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Withdraw</string>
+  </property>
+  <widget class="QPushButton" name="btnReturn">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>520</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnLogout">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>520</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Log out</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn20">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>270</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>20 €</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn40">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>270</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>40 €</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn50">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>270</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>50 €</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn100">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>270</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>100 €</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOtherSum">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>270</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Other sum</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelWithdraw">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Press the corresponding button to withdraw money.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Graphic">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_Graphic</zorder>
+  <zorder>btnReturn</zorder>
+  <zorder>btnLogout</zorder>
+  <zorder>btn20</zorder>
+  <zorder>btn40</zorder>
+  <zorder>btn50</zorder>
+  <zorder>btn100</zorder>
+  <zorder>btnOtherSum</zorder>
+  <zorder>labelWithdraw</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+[Unit]
+Description=Service for API of ATM project
+After=network.target
+
+[Service]
+Type=simple
+User={{ service_user }}
+WorkingDirectory={{ api_path }}
+ExecStart=npm start
